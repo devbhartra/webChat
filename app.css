@@ -34,3 +34,34 @@ body{
     display: flex;
     flex-direction: column; /*Horizontal by default*/
 }
+
+.flex-grow-1{
+    flex-grow: 1; /*grow till as much as possible; take up entire space*/
+}
+
+.hidden{            /*Stuff that we want to eventually hide*/
+    display: none;
+}
+
+
+/* Text Classes */
+.primary-text {
+	color: var(--primary-text);
+}
+
+.secondary-text {
+	color: var(--secondary-text);
+}
+
+.light-text {
+	color: var(--light-blue);
+}
+
+.text-center {
+	text-align: center;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 300;
+}
