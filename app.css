@@ -1,0 +1,36 @@
+/* Variables */
+:root {
+	--primary-blue: #2196f3;
+	--dark-blue: #1976d2;
+	--light-blue: #bbdefb;
+	--white: #ffffff;
+	--primary-text: #212121;
+	--secondary-text: #757575;
+	--light-gray: #bdbdbd;
+}
+
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    color: var(--primary-blue);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    justify-content: center;    /*Horizontal alignment*/
+    align-items: center;    /*Vertical alignment*/
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column; /*Horizontal by default*/
+}
