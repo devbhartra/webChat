@@ -10,39 +10,54 @@
 }
 
 /* Resets */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-    font-family: Helvetica, sans-serif;
-    color: var(--primary-blue);
+body {
+	font-family: Helvetica, sans-serif;
+	color: var(--primary-blue);
 }
 
-.flex{
-    display: flex;
+.flex {
+	display: flex;
 }
 
-.flex-center{
-    justify-content: center;    /*Horizontal alignment*/
-    align-items: center;    /*Vertical alignment*/
+.flex-center {
+	justify-content: center;
+	/*Horizontal alignment*/
+	align-items: center;
+	/*Vertical alignment*/
 }
 
-.flex-column{
-    display: flex;
-    flex-direction: column; /*Horizontal by default*/
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	/*Horizontal by default*/
 }
 
-.flex-grow-1{
-    flex-grow: 1; /*grow till as much as possible; take up entire space*/
+.flex-grow-1 {
+	flex-grow: 1;
+	/*grow till as much as possible; take up entire space*/
 }
 
-.hidden{            /*Stuff that we want to eventually hide*/
-    display: none;
+.hidden {
+	/*Stuff that we want to eventually hide*/
+	display: none;
 }
 
+.nb-2 {
+	margin-bottom: 20px;
+}
+
+.container {
+	/* used to give padding in bootstrap */
+	max-width: 600px;
+	margin: 0 auto;
+	/* horizontal centering in the container of 600px */
+}
 
 /* Text Classes */
 .primary-text {
@@ -64,4 +79,20 @@ body{
 h1 {
 	font-size: 48px;
 	font-weight: 300;
+}
+
+/* header */
+header {
+	height: 150px;
+	background-color: var(--dark-blue);
+	width: 100%;
+	color: white;
+	/* text color^ */
+}
+
+header .container {
+	height: 100%;
+	/* after doing this the text got centered across the entire header. Initially the container wasn't fitting the entire header*/
+	align-items: flex-start;
+	/* aligning to the left center */
 }
