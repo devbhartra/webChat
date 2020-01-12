@@ -11,12 +11,14 @@
 
 <body>
 
-    <div id="appContainer">
+    <div id="appContainer" class="flex-column">
+        <!-- just putting flex will stack the things horizontally -->
 
         <header>
-            <div>
+            <div class="container flex-column flex-center ">
+                <!-- center the text inside the container  -->
                 <h1>Quick Chat</h1>
-                <p>Group Chatting</p>
+                <p class="light-text">Group Chatting</p>
             </div>
         </header>
 
@@ -24,7 +26,7 @@
             <section id="login">
                 <h2>Get Started</h2>
                 <form action="" id="loginForm">
-
+                    <input type="text" name="username" id="usernameInput" placeholder="Username">
                 </form>
             </section>
 
